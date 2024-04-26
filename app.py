@@ -7,29 +7,30 @@ from PIL import Image
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+resume_file = current_dir / "assets" / "CV1.pdf"
+profile_pic = current_dir / "assets" / "profile-pic3.png"
 
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Doe"
+PAGE_TITLE = "Digital CV | Hermann D. KAKPEU"
 PAGE_ICON = ":wave:"
-NAME = "John Doe"
+NAME = "Hermann Désiré KAKPEU"
 DESCRIPTION = """
-Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+Junior Data Analyst, assisting enterprises by supporting data-driven decision-making.
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "hermann.kakpeu@centrale-casablanca.ma"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/codingisfun",
-    "LinkedIn": "https://linkedin.com",
-    "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
+    "Portfolio Web Site": "https://hermannkakapeu.github.io/khd.portfolio.github.io/",
+    "LinkedIn": "https://www.linkedin.com/in/hermann-d%C3%A9sir%C3%A9-kakpeu-b729aa1b8/",
+    "GitHub": "https://github.com/hermannkakapeu",
+    "Twitter": "#",
 }
 PROJECTS = {
     "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 Housing data Cleaning with SQL": "https://github.com/hermannkakapeu/Housing_Data_Cleaning_in_SQL",
+    "🏆 Data Exploration with SQL": "https://github.com/hermannkakapeu/Covid-19-Data-exploration-with-SQL",
+    "🏆 Power BI Data Professionnal Dashboard project": "https://github.com/hermannkakapeu/PowerBi-Project--DataProfessionals-Dashboard",
+    "🏆 Full Excel Dashboard Project - Bike Sales data": "https://github.com/hermannkakapeu/EXEL_project_Bike_Sales_Dashboard",
 }
 
 
@@ -47,7 +48,7 @@ profile_pic = Image.open(profile_pic)
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=230)
+    st.image(profile_pic, width=250)
 
 with col2:
     st.title(NAME)
@@ -73,7 +74,7 @@ st.write('\n')
 st.subheader("Experience & Qulifications")
 st.write(
     """
-- ✔️ 7 Years expereince extracting actionable insights from data
+- ✔️ Expereince extracting actionable insights from data
 - ✔️ Strong hands on experience and knowledge in Python and Excel
 - ✔️ Good understanding of statistical principles and their respective applications
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
@@ -87,50 +88,60 @@ st.subheader("Hard Skills")
 st.write(
     """
 - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-- 📊 Data Visulization: PowerBi, MS Excel, Plotly
+- 📊 Data Visulization: PowerBi, MS Excel, Plotly, seaborn and matplotlib
 - 📚 Modeling: Logistic regression, linear regression, decition trees
-- 🗄️ Databases: Postgres, MongoDB, MySQL
+- 🗄️ Databases: Postgres, MongoDB, MySQL, SSMS
 """
 )
 
 
 # --- WORK HISTORY ---
 st.write('\n')
-st.subheader("Work History")
+st.subheader("Work Experiences")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+st.write("🚧", "**Projet d’Optimisation | EXPRESS RELAIS · Casablanca, Maroc**")
+st.write("10/2023 - 01/2024")
 st.write(
     """
-- ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-- ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-- ► Redesigned data model through iterations that improved predictions by 12%
+- ► Optimisation de l’emplacement des consignes à colis pour l’amélioration du e-commerce et la réduction des échecs de livraison
+- ► Redaction d’article scientifique : Enhancing Last-Mile Logistics Efficiency: A Geospatial Perspective from Casablanca’s Urban Landscape
 """
 )
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-st.write("01/2018 - 02/2022")
+st.write("🚧", "**Stage de Fin d’études | LADHYX, LSCI · Distanciel, Paris, France**")
+st.write("03/2023 - 08/2023")
 st.write(
     """
-- ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-- ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-- ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
+- ► Gestion et Supervision du Projet du recherche
+- ► Modélisation numérique du comportement des matériaux de type catchoutiques
+- ► Simulation numérique du contact pneu-chaussée avec abaqus pour les jeux olympiques (cyclisme)
 """
 )
 
 # --- JOB 3
 st.write('\n')
-st.write("🚧", "**Data Analyst | Chegg**")
-st.write("04/2015 - 01/2018")
+st.write("🚧", "**Projet d’Option (Energie Developpement Durable) | TOTAL EREN · Casablanca, Maroc**")
+st.write("11/2022 - 02/2023")
 st.write(
     """
-- ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-- ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-- ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
+- ► Etude economique de la production d’hydrogene et d’Ammoniac vert au Maroc
+- ► Analyse technico-économique & Etude du Marché
+- ► Analyse du cadre Réglementaire – Modèle financier – Analyse SWOT
+"""
+)
+
+# --- JOB 4
+st.write('\n')
+st.write("🚧", "**Stage Assistant Ingénieur | LABORATOIRE IMS - ESITH · Maroc, Casablanca**")
+st.write("06/2022 - 08/2022")
+st.write(
+    """
+- ► Projet Intelligence artificielle : Developpement et déploiment de modele machine learning pour la classification de textile
+- ► Collecte et analyste de données spectroscopiques grâce à NirOne
 """
 )
 
